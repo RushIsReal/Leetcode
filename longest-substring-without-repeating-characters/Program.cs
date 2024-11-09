@@ -22,3 +22,4 @@ static void LengthOfLongestSubstring(string s)
     result = (result < looped.Length) ? looped.Length : result;
     Console.WriteLine(result);
 }
+
