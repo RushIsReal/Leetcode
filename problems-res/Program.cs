@@ -7,9 +7,12 @@ long memoryBefore = GC.GetTotalMemory(true);
 #endregion
 
 //not using static classes only for copy paste into leetcode faster
-Console.WriteLine(new ReverseInteger().Reverse(2147483647)); //7.reverse-integer
+#region ProblemsRes
+//Console.WriteLine(new ReverseInteger().Reverse(2147483647)); //7.reverse-integer
+Console.WriteLine(new StringToIntegerAtoi().MyAtoi("2147483646")); //8.string-to-integer-atoi
+#endregion
 
-#region EndBenchMark
+#region EndBenchmark
 stopwatch.Stop();
 long memoryAfter = GC.GetTotalMemory(false);        
 long memoryUsed = memoryAfter - memoryBefore;
